@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">PassX</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1> Password Manager</h1>
+        <p>We're thrilled to have you on board. As you embark on this journey towards enhanced security and peace of mind, know that we've designed every feature with your safety and convenience in mind. Say goodbye to the hassle of remembering countless passwords and worrying about online threats. With our state-of-the-art encryption and user-friendly interface, protecting your digital world has never been easier. Let's take this step together towards a safer, more secure online experience. Your journey to ultimate digital security starts now!"</p>
+        <h2> Your Password <span id="alert">(Copied!)</span></h2>
+        <table>
+            <tr>
+              <th>Website</th>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Delete</th>
+
+            </tr>
+            <!-- <tr>
+              <td>Google</td>
+              <td>abc@google.com</td>
+              <td>1234</td>
+              <td>Delete</td>
+            </tr> -->
+
+          </table>
+          
+        <h2> Add a Password</h2>
+
+        <form action="/submit" method="post">
+
+            <label for="website">Website:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <button class="btn" type="submit">Submit</button>
+          </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
